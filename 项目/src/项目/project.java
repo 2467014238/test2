@@ -12,7 +12,7 @@ public class project {
 		case 1:t.putin();break;
 		case 2:w.jiemi();break;
 		case 3:System.exit(0);
-		}
+		}//根据使用者的选择来完成不同的功能；
 	}
 	}
 

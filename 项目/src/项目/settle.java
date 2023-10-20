@@ -11,10 +11,10 @@ public class settle {
 		for(int i=0;i<array.length;i++) {
 		array[i]=(char)(array[i]+i+4);
 		n++;
-		}
+		}//将密码的偏移值复原；
 			char first=array[0];
 			char last=array[n-1];
-			array[0]=last;array[n-1]=first;//将字符1和最后一位调转
+			array[0]=last;array[n-1]=first;//将字符第一位和最后一位调转
 			
 			for(int i=array.length-1;i>=0;i--) {
 			System.out.println((char)array[i]);

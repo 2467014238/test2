@@ -14,7 +14,7 @@ public class add {
 			}//将字符反转
 			char first=array[0];
 			char last=array[n-1];
-			array[0]=last;array[n-1]=first;//将字符1和最后一位调转
+			array[0]=last;array[n-1]=first;//将字符第一位和最后一位调转
 			for(int i1=0;i1<array.length;i1++) {
 			
 			}
@@ -22,7 +22,7 @@ public class add {
 				
 				array[i1]=(char)(array[i1]-(n-i1)-3);
 				System.out.println((char)array[i1]);
-				}
+				}//输出最后加密的密码；
 	
 	
 	}
