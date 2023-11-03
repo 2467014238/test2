@@ -18,10 +18,11 @@ System.out.println("此密码为弱强度");}
 if(array.length>=8&&z+b==array.length){
 System.out.println("此密码为弱强度");}
 if(array.length>=8&&math==array.length){
-System.out.println("此密码为弱强度");}
+System.out.println("此密码为弱强度");}//
 if(array.length>=8&&math>=1&&z+b>=1){
 System.out.println("此密码为中强度");}
 if(array.length>=8&&math>=1&&z>=1&&b>=1){
 System.out.println("此密码为高强度");}
 }
 }
+
