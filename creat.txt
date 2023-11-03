@@ -1,0 +1,36 @@
+package 项目;
+import java.util.Random;
+import java.util.Scanner;
+public class creat {
+	Scanner in=new Scanner(System.in);
+	public void sc() {
+		System.out.println("输入要生成的密码长度(>=8)：");
+		Random random=new Random();
+		int l=0,math=0,b=0,z=0;
+		l=in.nextInt();
+		int t=0;
+		while(t==0){
+		String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < l; i++) {
+            int index = random.nextInt(characters.length());
+            sb.append(characters.charAt(index));
+        }
+        String o=sb.toString();
+        
+        int n=0;
+		char[] array=o.toCharArray();//获取字符数组
+		for(int i=0;i<l;i++) {
+			n=(int)array[i];
+			if(n>=48&&n<=57) math++;//0-9数字
+			if(n>=97&&n<=122)b++;//小写字母
+			if(n>=65&&n<=90)z++;//大写字母
+		}
+			if(math>=1&&z>=1&&b>=1) {
+				t=1;
+				System.out.println("生成的密码为:"+sb.toString());			
+			}
+		}
+	}
+	}
+
