@@ -1,1 +1,27 @@
-bccc
+package 项目;
+import java.util.Scanner;
+public class panduan{
+Scanner sc=new Scanner(System.in);
+public void jiemi(){
+System.out.println("输入需要判断强度的密码：");
+String s=sc.nextLine();
+int n=0,math=0,z=0,b=0;
+char[] array=s.toCharArray();//获取字符数组
+for(int i=0;i<array.length;i++){
+n=array[i];
+if(n>=48&&n<=57) math++;
+if(n>=97&&n<=122) b++;
+if(n>=65&&n<=90) z++;
+}
+if(array.length<8){
+System.out.println("此密码为弱强度");}
+if(array.length>=8&&z+b==array.length){
+System.out.println("此密码为弱强度");}
+if(array.length>=8&&math==array.length){
+System.out.println("此密码为弱强度");}
+if(array.length>=8&&math>=1&&z+b>=1){
+System.out.println("此密码为中强度");}
+if(array.length>=8&&math>=1&&z>=1&&b>=1){
+System.out.println("此密码为高强度");}
+}
+}
